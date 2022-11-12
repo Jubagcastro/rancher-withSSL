@@ -36,7 +36,7 @@ Optional: Persist storage on a NFS
 ```bash
 sudo mount -t nfs <YOUR NAS IP/NAME>:<YOUR EXPORT PATH>/rancher /opt/rancher
 ```
-Don't forget to set it in your fstab to mount at startup
+Optional: Don't forget to set it in your fstab to mount at startup
 ```bash
 > sudo vim /etc/fstab
 <YOUR NAS IP/NAME:<YOUR EXPORT PATH>/rancher               /opt/rancher      nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
